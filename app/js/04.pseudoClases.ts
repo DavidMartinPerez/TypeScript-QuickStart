@@ -1,7 +1,7 @@
 // Clase( recipiente del objecto )
 
 //export para pder usar en cualquier fichero.
-class Coche{
+class Coche implements CocheBase{
 
     //Propiedades
     public modelo: string;
