@@ -1,1 +1,0 @@
-// Funciones y tipado fuerte
