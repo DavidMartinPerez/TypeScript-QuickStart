@@ -8,18 +8,18 @@ class Coche implements CocheBase{
     public color: string;
     public matricula: string | number;
     //Metodos privados no se pueden aceder desde fuera
-    private añoMatriculacion: number;
+    private anioMatriculacion: number;
 
     //Construtor
-    constructor(modelo, color, matricula, añoMa){
+    constructor(modelo, color, matricula, anioMa){
         this.modelo = modelo;
         this.color = color;
         this.matricula = matricula;
-        this.añoMatriculacion = añoMa;
+        this.anioMatriculacion = anioMa;
     }
     //Metodos
-    public setAñoMatricula(año:number){
-        this.añoMatriculacion = año;
+    public setAnoMatricula(anio:number){
+        this.anioMatriculacion = anio;
     }
 
     public setColor(color:string){
@@ -31,6 +31,6 @@ class Coche implements CocheBase{
 }
 
 var audi = new Coche("A3","Blanco","57275BMX",1995);
-audi.setAñoMatricula(1993);
+audi.setAnoMatricula(1993);
 
 console.log(audi);

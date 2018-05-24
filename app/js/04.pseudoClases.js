@@ -2,15 +2,15 @@
 //export para pder usar en cualquier fichero.
 var Coche = /** @class */ (function () {
     //Construtor
-    function Coche(modelo, color, matricula, añoMa) {
+    function Coche(modelo, color, matricula, anioMa) {
         this.modelo = modelo;
         this.color = color;
         this.matricula = matricula;
-        this.añoMatriculacion = añoMa;
+        this.anioMatriculacion = anioMa;
     }
     //Metodos
-    Coche.prototype.setAñoMatricula = function (año) {
-        this.añoMatriculacion = año;
+    Coche.prototype.setAnoMatricula = function (anio) {
+        this.anioMatriculacion = anio;
     };
     Coche.prototype.setColor = function (color) {
         this.color = color;
@@ -21,5 +21,5 @@ var Coche = /** @class */ (function () {
     return Coche;
 }());
 var audi = new Coche("A3", "Blanco", "57275BMX", 1995);
-audi.setAñoMatricula(1993);
+audi.setAnoMatricula(1993);
 console.log(audi);
