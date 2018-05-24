@@ -1,0 +1,22 @@
+{
+  "name": "typescript-quickstart",
+  "version": "1.0.0",
+  "description": "¡Aprendiendo TypeScript!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DavidMartinPerez/TypeScript-QuickStart.git"
+  },
+  "author": "David Martín Pérez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DavidMartinPerez/TypeScript-QuickStart/issues"
+  },
+  "homepage": "https://github.com/DavidMartinPerez/TypeScript-QuickStart#readme",
+  "dependencies": {
+    "typescript": "^2.8.3"
+  }
+}
