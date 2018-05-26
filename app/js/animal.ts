@@ -2,7 +2,7 @@
 interface Ser{
     nombre:string;
     sexo:string;
-    edad:string;
+    edad:number;
 }
 // Class
 class Animal implements Ser{
@@ -13,10 +13,14 @@ class Animal implements Ser{
     public edad : number | undefined;
 
     // constructor
-    constructor(nombre,sexo,edad){
+    constructor(nombre,sexo,edad = null){
         this.nombre = nombre;
         this.sexo = sexo;
-        this.edad = edad;
+        if(edad == null){
+            this.edad = 0;
+        }else{
+            this.edad = edad;
+        }
     }
     // Metodos
     public getNombre():string{
@@ -73,7 +77,7 @@ class Gato extends Animal{
     }
 }
 
-var animal = new Animal("Pepito","macho",1);
+var animal = new Animal("Pepito","macho");
 
 console.log("##### Class animals ######");
 console.log(animal);
